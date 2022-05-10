@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio Ponderado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="mainContainer">
+        <section class="mainContainer__title">
+            <p>Promedio Ponderado</p>
+        </section>
+        <section class="mainContainer__content">
+            <p class="content__p">Con este programa podrás calcular el promedio ponderado de una serie de notas.</p> 
+            <form class="form">
+                <label for="note" class="form__label1">
+                    Ingresa la nota
+                    <input type="text" name="note" id="note" placeholder="nota">
+                </label>
+                <label for="pond" class="form__label2">
+                    Ingresa la ponderación de la nota (%)
+                    <input type="text" name="pond" id="pond" placeholder="%">
+                </label>
+                <button type="button" id="button__send">Enviar</button>
+                <br>
+                <button type="button" onclick="calcularPonderacion()">Calcular</button>
+            </form>
+        </section>
+        <section class="mainContainer__result">
+            <p id="result__program"></p>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
